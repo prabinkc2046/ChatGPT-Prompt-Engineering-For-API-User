@@ -33,6 +33,8 @@ export const analyseCustomerComplaint = async (customerComplaint: string) => {
         { role: 'system', content: prompt },
         { role: 'user', content: `\`\`\`${customerComplaint}\`\`\`` },
       ],
+    
+      
     });
 
     const data = response.choices[0].message.content;
